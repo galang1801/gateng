@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+        }
+        .nav1{
+            min-width:100vw;
+            background:linear-gradient(to left,violet,white,#C2E2FA,blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+        }
+        .list{
+            display:flex;
+            gap:25px;
+            font-size:23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: violet;
+            font-weight: bold;
+        }
+        nav ul li{
+            list-style-type: none;
+        }
+        .gambar{
+            margin-left: 50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 30px;
+            letter-spacing: 3px;
+        }
+        img{
+            width: 100px;
+            height: 80px;
+        }
+        .talk-btn{
+            margin-right: 60px;
+            background: 1;
+        }
+        button{
+            margin-left: 60px;
+            background:linear-gradient(to left,rgb(76,184,235),violet);
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+        }
+        button:hover{
+            background: linear-gradient(to left,white,violet);
+        }
+        .nama{
+            color: aliceblue;
+            font-weight: 900;
+        }
+        .judul1{
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: rgb(50,115,124);
+            text-shadow: 0 0 15px rgb(26, 53 ,94);
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .contect1{
+            background: linear-gradient(to left,white,skyblue);
+            padding: 80px;
+            text-align: center;
+        }
+        .isi1 p{
+            max-width: 800px;
+            line-height: 1.7;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgb(50,115,124);
+            color:rgb(0,0,0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .isi1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px
+        }
+        img.ds{
+            width: 400px;
+            height: 400px;
+        }
+        .contect2{
+            background: linear-gradient(to left,skyblue,white);
+            padding: 80px 100px;
+        }
+        .judul2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 700;
+            color: rgb(105,187,224);
+            margin-bottom:40px ;
+            text-shadow: 0 0 20px rgb(61,94,107);
+        }
+        .isi2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+        .isi2 p{
+            background: transparent;
+            backdrop-filter: blur(12px);
+            padding: 20px 25px;
+            border-radius: 15px;
+            color: black;
+            box-shadow: 0 0 15px rgb(6,77,105);
+            line-height: 1.6;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        img.cyber{
+            width: 400px;
+            height: 400px;
+        }
+        .contect3{
+            background: linear-gradient(to left,white,skyblue);
+            padding: 80px 100px;
+            text-align: center;
+        }
+        .isi3 p{
+            max-width: 800px;
+            line-height: 1.7;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgb(50,115,124);
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .isi3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        img.ds{
+            width: 400px;
+            height: 400px;
+        }
+        .judul3{
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: rgb(105,187,224);
+            text-shadow: 0 0 15px rgb(26, 53 ,94);
+            letter-spacing: 2px;
+        }
+        footer{
+            background: linear-gradient(to left,black,#1c2541);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+            gap: 20px;
+            box-shadow: 0 -4px 20px black;
+        }
+        footer h2{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .abautus ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .abautus ul li a{
+            text-decoration: none;
+            color: #C2E2FA;
+            font-weight: bold;
+            transition: color 0.03s ease;
+        }
+        .abautus ul li a:hover{
+            color:blue;
+        }
+        .copy{
+            font-size: 15px;
+            color: whitesmoke;
+        }
+
+    </style>
+</body>
+</html>
+     <nav class="nav1">
+        <div class="gambar">
+        <img class="" src="belajar css gateng/images (2).jpg"alt="">
+        <p class="nama">cybersecurity</p>
+        </div>
+        <ul class="list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+        <button>LEST'TALK</button>
+     </nav>
+     <div class="contect1">
+        <h1 class="judul1">APA ITU CYBERSECURITY?</h1>
+        <div class="isi1">
+            <p>Cyber Security adalah sistem yang dirancang khusus untuk melindungi jaringan dan perangkat dari serangan siber yang beragam, seperti malware, phishing, dan denial of service. Jadi, bayangkan siber sebagai sebuah dunia paralel dimana kita saling terhubung melalui internet untuk mengakses informasi dan layanan.</p>
+            <img src="belajar css gateng/images (1).jpg" alt="">
+        </div>
+     </div>
+
+     <div class="contect2">
+        <h1 class="judul2">FUNGSI CYBERSECURITY?</h1>
+        <div class="isi2">
+            <div>
+            <p>melindungi sistem, perangkat, jaringan, dan data dari serangan siber dengan cara menjaga kerahasiaan, integritas, dan ketersediaan informasi.</p>
+            <br>
+            </div>
+            <img src="cyber-security.webp"alt="">
+        </div>
+     </div>
+
+     <div class="contect3">
+        <h1 class="judul3">APA ITU ARTIFICIAL INTELLIGENCE?</h1>
+        <div class="isi3">
+            <p>teknologi yang memungkinkan mesin mensimulasikan kecerdasan manusia untuk melakukan tugas seperti belajar, bernalar, dan memecahkan masalah. </p>
+            <img src="artificial-intelligence.jpg"alt="">
+        </div>
+     </div>
+
+
+     <footer>
+      <div class="ce">
+           <h2>CONTACT US</h2>
+     </div>
+     <div class="abautus">
+        <ul>
+            <li><a href="#">EMAIL</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+        </ul>
+     </div>
+     <div class="copy">
+        <p>@All Right Reserved 2020</p>
+     </div>
+     </footer>
+    </body>
+    </html>
+        
